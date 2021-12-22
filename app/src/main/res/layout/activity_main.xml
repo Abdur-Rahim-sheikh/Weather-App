@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/back"
+    >
+
+
+    <TextView
+        android:id="@+id/latitude_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Latitude"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/longitude_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Longitude"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        />
+
+    <EditText
+
+        android:id="@+id/city_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="City/Country"
+        android:text=""
+        android:layout_gravity="center"
+        android:textSize="30sp"
+
+        />
+    <Button android:id="@+id/location_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Location"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/weather_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Get Weather"
+        />
+
+    <ImageView
+        android:contentDescription="@android:string/autofill"
+        android:id="@+id/weather_icon"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+
+        />
+
+    <TextView
+        android:id="@+id/Show_weather"
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:layout_gravity="center"
+        android:onClick="exit_app"
+
+
+        />
+
+</LinearLayout>
